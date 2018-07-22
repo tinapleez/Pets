@@ -74,11 +74,11 @@ public class EditorActivity extends AppCompatActivity {
      */
     private void setupSpinner() {
         // Create adapter for spinner. The list options are from the String array it will use
-        // the spinner will use the default layout
+        // the spinner will use the default list_item
         ArrayAdapter genderSpinnerAdapter = ArrayAdapter.createFromResource(this,
                 R.array.array_gender_options, android.R.layout.simple_spinner_item);
 
-        // Specify dropdown layout style - simple list view with 1 item per line
+        // Specify dropdown list_item style - simple list view with 1 item per line
         genderSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
         // Apply the adapter to the spinner
